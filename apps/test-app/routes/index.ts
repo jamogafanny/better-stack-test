@@ -9,11 +9,11 @@ export const app = new Elysia({ prefix: "/api" })
     cors({
       origin: true,
       credentials: true,
-    })
+    }),
   )
 
   .use(baseRoutes)
-  .use(redisRoutes)
+  //.use(redisRoutes)
 
   .get("/", () => `Hello from bun@${Bun.version}`, {
     response: {
