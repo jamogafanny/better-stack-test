@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "@better-stack-test/api": "workspace:*",
+    "@better-stack-test/api-elysia": "workspace:*",
+    "@better-stack-test/auth": "workspace:*",
+    "@better-stack-test/db": "workspace:*",
+    "@elysiajs/cors": "^1.3.3",
+    "@elysiajs/trpc": "^1.1.0",
+    "@trpc/server": "catalog:",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "elysia": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:",
+    "@types/bun": "^1.2.6",
+    "tsdown": "catalog:"
+  }
+}
