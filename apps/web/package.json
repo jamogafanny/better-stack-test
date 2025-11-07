@@ -5,11 +5,7 @@
   "scripts": {
     "dev": "next dev --port=3001",
     "build": "next build",
-    "start": "next start",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+    "start": "next start"
   },
   "dependencies": {
     "radix-ui": "^1.4.2",
@@ -35,8 +31,7 @@
     "@better-stack-test/api": "workspace:*",
     "@better-stack-test/api-elysia": "workspace:*",
     "@better-stack-test/auth": "workspace:*",
-    "@elysiajs/eden": "^1.2.8",
-    "@opennextjs/cloudflare": "^1.6.5"
+    "@elysiajs/eden": "^1.2.8"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "catalog:",
@@ -45,7 +40,6 @@
     "@types/react-dom": "catalog:",
     "tailwindcss": "catalog:",
     "typescript": "catalog:",
-    "@tanstack/react-query-devtools": "^5.85.5",
-    "wrangler": "^4.40.3"
+    "@tanstack/react-query-devtools": "^5.85.5"
   }
 }
