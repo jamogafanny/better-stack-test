@@ -33,7 +33,9 @@
     "better-auth": "catalog:",
     "@polar-sh/better-auth": "catalog:",
     "@better-stack-test/api": "workspace:*",
+    "@better-stack-test/api-elysia": "workspace:*",
     "@better-stack-test/auth": "workspace:*",
+    "@elysiajs/eden": "^1.2.8",
     "@opennextjs/cloudflare": "^1.6.5"
   },
   "devDependencies": {

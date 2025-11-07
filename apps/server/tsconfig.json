@@ -1,12 +1,18 @@
 {
-	"extends": "../../tsconfig.base.json",
-	"compilerOptions": {
-		"composite": true,
-		"outDir": "dist",
-		"baseUrl": ".",
-		"paths": {
-			"@/*": ["./src/*"]
-		},
-		"jsx": "react-jsx"
-	}
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "jsx": "react-jsx"
+  },
+  "references": [
+    { "path": "../../packages/api" },
+    { "path": "../../packages/api-elysia" },
+    { "path": "../../packages/auth" },
+    { "path": "../../packages/db" }
+  ]
 }
