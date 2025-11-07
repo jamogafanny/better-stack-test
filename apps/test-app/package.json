@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev:next": "next dev -p 3001",
+    "dev:next": "next dev -p 3005",
     "dev:api": "bun run --watch api/index.ts",
-    "dev": "bun run --watch api/index.ts",
+    "dev": "bun run dev:next && dev:api",
     "build": "next build",
     "check-types": "tsc --noEmit",
     "start": "next start",
