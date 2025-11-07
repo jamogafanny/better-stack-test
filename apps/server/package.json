@@ -3,10 +3,10 @@
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
-    "build": "tsdown",
+    "build": "tsdown src/index.ts -d api --dts",
     "check-types": "tsc -b",
     "compile": "bun build --compile --minify --sourcemap --bytecode ./src/index.ts --outfile server",
-    "dev": "bun run --hot src/index.ts",
+    "dev": "bun run --hot src/api/index.ts",
     "start": "bun run dist/index.js"
   },
   "dependencies": {
