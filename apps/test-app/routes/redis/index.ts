@@ -11,7 +11,7 @@ import {
   SESSION_ID_PARAM_NAME,
 } from "@/lib/constants";
 import { getImageUrl, r2 } from "@/lib/r2";
-import { redisEntrySchema, SessionRedisService } from "@/lib/redis";
+import { redisEntrySchema, SessionRedisService } from "@/lib/redis-mock";
 
 export const redisRoutes = new Elysia({ prefix: "/redis" })
 
@@ -109,8 +109,8 @@ export const redisRoutes = new Elysia({ prefix: "/redis" })
             t.File({
               type: ACCEPTED_IMAGE_TYPES,
               maxSize: MAX_IMAGE_SIZE,
-            })
-          )
+            }),
+          ),
         ),
       }),
       cookie: t.Object({
@@ -130,7 +130,7 @@ export const redisRoutes = new Elysia({ prefix: "/redis" })
           error: t.String(),
         }),
       },
-    }
+    },
   )
 
   .get(
@@ -182,7 +182,7 @@ export const redisRoutes = new Elysia({ prefix: "/redis" })
           error: t.String(),
         }),
       },
-    }
+    },
   )
 
   .delete(
@@ -262,5 +262,5 @@ export const redisRoutes = new Elysia({ prefix: "/redis" })
           error: t.String(),
         }),
       },
-    }
+    },
   );

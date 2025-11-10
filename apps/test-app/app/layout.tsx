@@ -28,7 +28,7 @@ type RootLayoutParams = {
 
 export default function RootLayout({ children }: RootLayoutParams) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

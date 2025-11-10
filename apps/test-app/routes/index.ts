@@ -13,7 +13,7 @@ export const app = new Elysia({ prefix: "/api" })
   )
 
   .use(baseRoutes)
-  //.use(redisRoutes)
+  .use(redisRoutes)
 
   .get("/", () => `Hello from bun@${Bun.version}`, {
     response: {
