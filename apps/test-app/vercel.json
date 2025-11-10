@@ -4,7 +4,7 @@
   "buildCommand": "next build",
   "functions": {
     "api/index.ts": {
-      "runtime": "edge"
+      "runtime": "@godsreveal/vercel-bun@0.2.4"
     }
   },
   "rewrites": [
